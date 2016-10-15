@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+FILE_NAME_SIZE	sbu_os_xmergesort.h	41;"	d
+FILE_NAME_SIZE	xhw1.h	49;"	d
+INC	Makefile	/^INC=\/lib\/modules\/$(shell uname -r)\/build\/arch\/x86\/include$/;"	m
+SBU_OS_READ_PERM	sbu_os_xms_utils.h	/^	SBU_OS_READ_PERM	= 0,$/;"	e	enum:sbu_os_rw_perm_
+SBU_OS_WRITE_PERM	sbu_os_xms_utils.h	/^	SBU_OS_WRITE_PERM	= 1$/;"	e	enum:sbu_os_rw_perm_
+UDBG	sbu_os_xmergesort.h	44;"	d
+__SBU_OS_SYS_MERGESORT_H__	sbu_os_xmergesort.h	29;"	d
+__SBU_OS_XHW1_H__	xhw1.h	29;"	d
+__SBU_OS_XMERGESORT_UTILS_H__	sbu_os_xms_utils.h	29;"	d
+exit_sys_xmergesort	sbu_os_xmergesort.c	/^module_exit(exit_sys_xmergesort);$/;"	v
+exit_sys_xmergesort	sbu_os_xmergesort.c	/^static void  __exit exit_sys_xmergesort(void)$/;"	f	file:
+ifile1	sbu_os_xmergesort.h	/^	char ifile1[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_kargs_
+ifile1	xhw1.h	/^        char ifile1[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_args_
+ifile2	sbu_os_xmergesort.h	/^	char ifile2[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_kargs_
+ifile2	xhw1.h	/^        char ifile2[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_args_
+init_sys_xmergesort	sbu_os_xmergesort.c	/^module_init(init_sys_xmergesort);$/;"	v
+init_sys_xmergesort	sbu_os_xmergesort.c	/^static int __init init_sys_xmergesort(void)$/;"	f	file:
+main	xhw1.c	/^int main(int argc, const char *argv[])$/;"	f
+ofile	sbu_os_xmergesort.h	/^	char ofile[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_kargs_
+ofile	xhw1.h	/^        char ofile[FILE_NAME_SIZE];$/;"	m	struct:sbu_os_args_
+sbu_os_args	xhw1.h	/^}sbu_os_args;$/;"	t	typeref:struct:sbu_os_args_
+sbu_os_args_	xhw1.h	/^typedef struct sbu_os_args_ {$/;"	s
+sbu_os_file_close	sbu_os_xms_utils.c	/^void sbu_os_file_close(struct file* filp)$/;"	f
+sbu_os_file_open	sbu_os_xms_utils.c	/^struct file* sbu_os_file_open(const char* path, sbu_os_rw_perm flags)$/;"	f
+sbu_os_file_read	sbu_os_xms_utils.c	/^int sbu_os_file_read(struct file* filp, unsigned char* data, unsigned int size)$/;"	f
+sbu_os_file_write	sbu_os_xms_utils.c	/^int sbu_os_file_write(struct file* filp, unsigned char* data, unsigned int size)$/;"	f
+sbu_os_kargs	sbu_os_xmergesort.h	/^}sbu_os_kargs;$/;"	t	typeref:struct:sbu_os_kargs_
+sbu_os_kargs_	sbu_os_xmergesort.h	/^typedef struct sbu_os_kargs_ {$/;"	s
+sbu_os_rw_perm	sbu_os_xms_utils.h	/^}sbu_os_rw_perm;$/;"	t	typeref:enum:sbu_os_rw_perm_
+sbu_os_rw_perm_	sbu_os_xms_utils.h	/^typedef enum sbu_os_rw_perm_ {$/;"	g
+sbu_os_xmergesort	sbu_os_xmergesort.c	/^unsigned int sbu_os_xmergesort(const char *buf1, const char *buf2, int n1, int n2, char *out_buf)$/;"	f
+sys_xmergesort-objs	Makefile	/^sys_xmergesort-objs := sbu_os_xmergesort.o sbu_os_xms_utils.o$/;"	m
+xmergesort	sbu_os_xmergesort.c	/^asmlinkage long xmergesort(void *arg)$/;"	f
