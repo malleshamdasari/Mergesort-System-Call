@@ -32,50 +32,7 @@ asmlinkage extern long (*sysptr)(void *arg);
 
 unsigned int sbu_os_xmergesort(const char *buf1, const char *buf2, int n1, int n2, char *out_buf)
 {
-	char *line1=NULL, *line2=NULL;
-	int l1=0, l2=0, i=0, j=0, k=0, t1=0, t2=0;
-	line1 = kmalloc(4096, GFP_KERNEL);
-	line2 = kmalloc(4096, GFP_KERNEL);
-
-        while(i<n1 && j<n2) {
-                if(!l1) {
-        		while(buf1[i] != '\n' && buf1[i] != '\0') 
-				line1[l1++] = buf1[i++];
-        		line1[l1++] = buf1[i++];
-		}
-		if(!l2) {
-        		while(buf2[j] != '\n' && buf2[j] != '\0') 
-				line2[l2++] = buf2[j++];
-        		line2[l2++] = buf2[j++];
-		}
-		if(strcmp(line1, line2) <= 0) {
-			while(t1<l1) 
-                                out_buf[k++] = line1[t1++];
-			l1 = 0;
-                	t1 = 0;
-		}
-		else {
-	                while(t2<l2) 
-                                out_buf[k++] = line2[t2++];
-			l2 = 0;
-                	t2 = 0;	
-		}
-	}
-	while(i<n1) 
-		out_buf[k++] = buf1[i++];
-	while(j<n2) 
-		out_buf[k++] = buf2[j++];
-	if(l1)
-		while(t1<l1)
-			out_buf[k++] = line1[t1++];
-	if(l2)
-		while(t2<l2)
-			out_buf[k++] = line1[t2++];
-	if(line1)
-		kfree(line1);
-	if(line2)
-		kfree(line2);
-	return n1+n2;
+	 
 }
 
 asmlinkage long xmergesort(void *arg)
